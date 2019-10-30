@@ -28,7 +28,7 @@ export class PlayerComponent implements OnInit {
   public isBuffering: boolean;
   public isHeadlessPlayer: boolean;
 
-  @ViewChild('playerManager')
+  @ViewChild('playerManager' , {static: false})
   private playerManager: PlayerManagerComponent;
 
   private authenticatedUser: AuthenticatedUserModel;

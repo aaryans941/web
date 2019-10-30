@@ -24,10 +24,10 @@ export class CollapsibleComponent implements AfterContentInit, OnChanges, OnDest
   private _subscriptions: Subscription;
   private _isCollapsed = false;
 
-  @ViewChild('collapsibleBody')
+  @ViewChild('collapsibleBody' , {static: false})
   private _collapsibleBody: ElementRef;
 
-  @ViewChild('collapsibleBodyContent')
+  @ViewChild('collapsibleBodyContent' , {static: false})
   private _collapsibleBodyContent: ElementRef;
 
   @Input()

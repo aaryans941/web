@@ -18,10 +18,10 @@ export class OptionsBtnComponent implements OnDestroy {
   @Output()
   openState = new EventEmitter();
 
-  @ViewChild('optionsHolder')
+  @ViewChild('optionsHolder',{static: false})
   optionsHolder: ElementRef;
 
-  @ViewChild('toggler')
+  @ViewChild('toggler',{static: false})
   toggler: ElementRef;
 
   constructor(private el: ElementRef, private renderer2: Renderer2) {

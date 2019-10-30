@@ -27,7 +27,7 @@ export class AuthenticatedUserPlaylistFormComponent implements IModalComponent, 
   @Output()
   public cancel: EventEmitter<IPlaylist>;
 
-  @ViewChild('playlistForm')
+  @ViewChild('playlistForm' , {static : false})
   public form: NgForm;
 
   constructor() {

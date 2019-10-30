@@ -26,7 +26,7 @@ export class MultiLineComponent implements OnInit, OnDestroy {
 
   @Output() lineAmountChanged = new EventEmitter();
 
-  @ViewChild('canvas') canvas: ElementRef;
+  @ViewChild('canvas',{static: false}) canvas: ElementRef;
 
   public calculateLines(text: string, maxWidth: number): void {
     const words = text.split(' ');

@@ -32,7 +32,7 @@ export class DeleteAccountComponent implements IModalComponent {
     }
   };
 
-  @ViewChild('form')
+  @ViewChild('form' , {static : false})
   public form: NgForm;
 
   public confirmation: string;

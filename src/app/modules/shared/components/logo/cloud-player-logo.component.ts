@@ -18,7 +18,7 @@ export class LogoComponent implements AfterViewInit, OnDestroy {
   @Input()
   public animate = false;
 
-  @ViewChild('playPause')
+  @ViewChild('playPause' , {static: false})
   public playPause: ElementRef;
 
   constructor(private el: ElementRef,

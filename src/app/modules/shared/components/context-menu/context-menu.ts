@@ -57,14 +57,14 @@ export class ContextMenuComponent implements OnInit, AfterViewInit, OnDestroy {
   private _isOpen: boolean;
   private _contextMenuManager: ContextMenuManager;
   private _subscriptions: Subscription;
-  private _debouncedUpdate: Function;
+  private _debouncedUpdate: EventHandler;
   private _isDestroyed = false;
 
   public options: Array<IContextOption>;
-  @ViewChild('container')
+  @ViewChild('container' , {static: false})
   public container: ElementRef;
 
-  @ViewChild('contextMenu')
+  @ViewChild('contextMenu' , {static: false})
   public contextMenu: ElementRef;
 
   constructor(private el: ElementRef,

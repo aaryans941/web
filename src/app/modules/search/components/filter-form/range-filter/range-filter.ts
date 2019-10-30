@@ -9,7 +9,7 @@ import {FilterFormComponent} from '../filter-form';
   templateUrl: './range-filter.html'
 })
 export class RangeFilterComponent extends AbstractFilterComponent {
-  @ViewChild('ngControl')
+  @ViewChild('ngControl',{static: false})
   protected ngControl: NgControl;
 
   @Input()

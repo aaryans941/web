@@ -19,7 +19,7 @@ export class CollectionTextInputSearchComponent implements OnInit, OnDestroy, On
   public isLoading = false;
   public isIdle = false;
 
-  @ViewChild('searchInput') searchBar: ElementRef;
+  @ViewChild('searchInput', {static: false}) searchBar: ElementRef;
 
   @Input() collection: BaseCollection<BaseModel>;
 

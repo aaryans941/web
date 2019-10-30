@@ -13,7 +13,7 @@ export class ScrollViewComponent implements OnInit, OnDestroy {
 
   public scrollPos: number;
 
-  @ViewChild('scrollView')
+  @ViewChild('scrollView',{static: false})
   public scrollView: ElementRef;
 
   @Output()

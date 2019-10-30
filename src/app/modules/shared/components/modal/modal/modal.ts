@@ -37,7 +37,7 @@ export class ModalComponent implements IModal, OnInit, OnDestroy {
   public isVisible = false;
   public modalOptions: IModalOptions;
 
-  @ViewChild('modalContainer', {read: ViewContainerRef})
+  @ViewChild('modalContainer', {read: ViewContainerRef , static : false})
   public container: ViewContainerRef;
 
   @Output()

@@ -9,7 +9,7 @@ import {FilterFormComponent} from '../filter-form';
   templateUrl: './youtube-duration-filter.html'
 })
 export class YoutubeDurationFilterComponent extends AbstractFilterComponent {
-  @ViewChild('ngControl')
+  @ViewChild('ngControl',{static: false})
   protected ngControl: NgControl;
 
   constructor(protected filterForm: FilterFormComponent) {

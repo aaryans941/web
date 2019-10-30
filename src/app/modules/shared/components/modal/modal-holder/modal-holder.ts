@@ -19,10 +19,10 @@ import {Modal, ModalStates} from '../../../src/modal-factory.class';
   ]
 })
 export class ModalHolderComponent implements OnInit, OnDestroy {
-  @ViewChild('modalContainer', {read: ViewContainerRef})
+  @ViewChild('modalContainer', {read: ViewContainerRef , static: false})
   private _container: ViewContainerRef;
 
-  @ViewChild('modalHolder')
+  @ViewChild('modalHolder' , {static: false})
   private _modalHolder: ElementRef;
 
   public showBackdrop = false;

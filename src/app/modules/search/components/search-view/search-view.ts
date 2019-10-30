@@ -44,8 +44,8 @@ export class SearchViewComponent implements AfterViewInit {
   public isConnected = true;
   public authenticatedUser: AuthenticatedUserModel;
 
-  @ViewChild('searchBar') searchBar: CollectionTextInputSearchComponent;
-  @ViewChild('tabBar') tabBar: TabBarComponent;
+  @ViewChild('searchBar' , {static: false}) searchBar: CollectionTextInputSearchComponent;
+  @ViewChild('tabBar' , {static: false}) tabBar: TabBarComponent;
 
   constructor(private humanReadableSecondsPipe: HumanReadableSecondsPipe,
               private privacyConfigModalOpener: PrivacyConfigModalOpener,

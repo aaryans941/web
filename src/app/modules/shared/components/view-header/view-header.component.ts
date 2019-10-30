@@ -17,7 +17,7 @@ export class ViewHeaderComponent implements AfterViewInit, OnDestroy {
   private _boundingRect: ClientRect;
   private _affixTop: number;
 
-  @ViewChild('header')
+  @ViewChild('header',{static: false})
   public header;
 
   constructor(private el: ElementRef,

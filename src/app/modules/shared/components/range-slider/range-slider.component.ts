@@ -38,13 +38,13 @@ export class RangeSliderComponent implements ControlValueAccessor, OnDestroy, On
   draggerSize = 14;
   draggerCenterOffset = -1 * ((this.draggerSize / 2) - 2);
 
-  @ViewChild('progressLine')
+  @ViewChild('progressLine' ,{static: false})
   protected progressBarLine: ElementRef;
 
-  @ViewChild('progressBar')
+  @ViewChild('progressBar' , {static: false})
   protected progressBarBg: ElementRef;
 
-  @ViewChild('handle')
+  @ViewChild('handle',{static: false})
   protected handle: ElementRef;
 
   @Input()

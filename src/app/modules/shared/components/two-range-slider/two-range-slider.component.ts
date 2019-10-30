@@ -44,22 +44,22 @@ export class TwoRangeSliderComponent implements OnChanges, ControlValueAccessor,
   draggerSize = 14;
   draggerCenterOffset = -1 * ((this.draggerSize / 2) - 2);
 
-  @ViewChild('progressBar')
+  @ViewChild('progressBar',{static: false})
   protected progressBar: ElementRef;
 
-  @ViewChild('progressLine')
+  @ViewChild('progressLine',{static: false})
   protected progressLine: ElementRef;
 
-  @ViewChild('handleOne')
+  @ViewChild('handleOne',{static: false})
   protected handleOne: ElementRef;
 
-  @ViewChild('handleTwo')
+  @ViewChild('handleTwo',{static: false})
   protected handleTwo: ElementRef;
 
-  @ViewChild('sliderOne')
+  @ViewChild('sliderOne',{static: false})
   protected sliderOne: ElementRef;
 
-  @ViewChild('sliderTwo')
+  @ViewChild('sliderTwo',{static: false})
   protected sliderTwo: ElementRef;
 
   @Input()

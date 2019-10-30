@@ -12,7 +12,7 @@ import {filter} from 'rxjs/internal/operators';
 export class MinMaxRangeFilterComponent implements AfterContentInit {
   value: ITwoRangeSliderValue;
 
-  @ViewChild('ngControl')
+  @ViewChild('ngControl' , {static: false})
   protected ngControl: NgControl;
 
   @Input()

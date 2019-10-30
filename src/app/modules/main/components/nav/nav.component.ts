@@ -77,7 +77,7 @@ export class NavComponent implements OnInit {
   public auxappAccount: AuthenticatedUserAccountAuxappModel;
   public version = packageJSON.version;
 
-  @ViewChild('shrinkingSidebar')
+  @ViewChild('shrinkingSidebar',{static: false})
   public shrinkingSidebar: ElementRef;
 
   constructor(private el: ElementRef,

@@ -47,7 +47,7 @@ export class PlayerManagerComponent implements OnInit {
   private _errorRetryTimeout: any;
 
 
-  @ViewChild('playerContainer', {read: ViewContainerRef})
+  @ViewChild('playerContainer', {read: ViewContainerRef , static : false})
   private container: ViewContainerRef;
 
   @Input()
